@@ -17,7 +17,7 @@
 
 variable "cidr" {
   description = "the CIDR range for the cluster subnets"
-  default     = "10.0.0.0/16"
+  default     = "10.240.0.0/16"
 }
 
 variable "environment" {
