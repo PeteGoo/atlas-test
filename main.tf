@@ -27,7 +27,7 @@ variable "environment" {
 
 variable "zones" {
   description = "a comma-separated list of availability zones, defaults to all AZ of the region, if set to something other than the defaults, both internal_subnets and external_subnets have to be defined as well"
-  default     = "us-west-2a, us-west-2b, us-west-2c"
+  default     = "us-west-2a,us-west-2b,us-west-2c"
 }
 
 variable "multi_az_nat" {
