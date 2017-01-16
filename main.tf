@@ -43,6 +43,10 @@ output "igw_id" {
   value = "${aws_internet_gateway.igw.id}"
 }
 
+provider "aws" {
+  region = "us-west-2"
+}
+
 resource "aws_vpc" "main_vpc" {
   cidr_block           = "${var.cidr}"
   enable_dns_support   = true
