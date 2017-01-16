@@ -1,4 +1,4 @@
-resource "aws_instance" "marjo_test-windows-domainjoined-instance" {
+resource "aws_instance" "atlas-test-windows-instance" {
   ami           = "ami-bdb618dd"
   instance_type = "t2.micro"
   subnet_id     = "${element(aws_subnet.public_subnet.*.id, 0)}"
